@@ -11,8 +11,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Advogado do interior de Minas põe a IA para fazer o marketing e os sistemas do próprio escritório | O Operador</title>
 <meta name="description" content="Tallisson Souza, dono de um escritório de direito bancário com dez a doze vendedores, montou com a Artemis uma operação de marketing com inteligência artificial no próprio computador. Conteúdo patrocinado.">
-<meta name="theme-color" content="#16181B">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2316181B'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='40' font-weight='700' text-anchor='middle' fill='white'%3EO%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#121417">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23121417'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='40' font-weight='700' text-anchor='middle' fill='white'%3EO%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="O Operador">
@@ -52,11 +52,11 @@
     --ink-2:#3A403B;
     --ink-3:#666D67;
     --rule:#E1DDD3;
-    --escuro:#16181B;
-    --escuro-2:#2A2D31;
-    --rubro:#A8301C;
-    --vermelho:#C8341F;
-    --vermelho-claro:#FF9B85;
+    --escuro:#121417;
+    --escuro-2:#2B2F35;
+    --azul-texto:#1D4E89;
+    --azul:#1F5FAD;
+    --azul-claro:#A9CBF5;
     --erro:#B3261E;
     --serif:"Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
     --sans:"Libre Franklin", "Franklin Gothic Medium", "Helvetica Neue", Arial, sans-serif;
@@ -68,13 +68,13 @@
   html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:24px}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-optical-sizing:auto;font-size:1.125rem;line-height:1.62;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
   img{max-width:100%;height:auto;display:block}
-  a{color:var(--rubro);text-underline-offset:.18em;text-decoration-thickness:1px}
+  a{color:var(--azul-texto);text-underline-offset:.18em;text-decoration-thickness:1px}
   a:hover{color:var(--escuro)}
-  :focus-visible{outline:3px solid var(--vermelho);outline-offset:2px}
+  :focus-visible{outline:3px solid var(--azul);outline-offset:2px}
 
   /* barra de leitura */
   .progresso{position:fixed;inset:0 0 auto 0;height:3px;z-index:60;pointer-events:none}
-  .progresso span{display:block;height:100%;width:100%;background:var(--vermelho);transform-origin:0 50%;transform:scaleX(0)}
+  .progresso span{display:block;height:100%;width:100%;background:var(--azul);transform-origin:0 50%;transform:scaleX(0)}
 
   /* cabeçalho de jornal */
   .jornal-faixa{background:var(--escuro);color:#fff}
@@ -88,7 +88,7 @@
   .abertura{max-width:1180px;margin:0 auto;padding:22px var(--gutter) 8px;display:grid;gap:28px}
   .chapeu{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:18px}
   .chapeu .ed{display:inline-flex;align-items:center;gap:9px;font:800 .75rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--escuro)}
-  .chapeu .ed::before{content:"";width:10px;height:10px;background:var(--vermelho)}
+  .chapeu .ed::before{content:"";width:10px;height:10px;background:var(--azul)}
   .selo{font:600 .625rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--rule);padding:5px 8px 4px;border-radius:2px}
   h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.05rem,1.35rem + 2.9vw,3.45rem);line-height:1.07;letter-spacing:-.018em;margin:0 0 18px;color:var(--ink);text-wrap:balance}
   .linha-fina{font-family:var(--serif);font-weight:400;font-size:clamp(1.15rem,1.02rem + .6vw,1.4rem);line-height:1.42;color:var(--ink-2);margin:0 0 24px;max-width:40em;text-wrap:pretty}
@@ -125,7 +125,7 @@
   /* citação em destaque */
   .destaque{margin:2.2rem 0;padding:0;border:0}
   .destaque p{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(1.4rem,1.15rem + 1.1vw,1.85rem);line-height:1.3;color:var(--escuro);margin:0 0 .75em;letter-spacing:-.005em}
-  .destaque p::before{content:"“";display:block;font-style:normal;font-weight:600;font-size:3.2em;line-height:.62;color:var(--rubro);margin-bottom:.12em}
+  .destaque p::before{content:"“";display:block;font-style:normal;font-weight:600;font-size:3.2em;line-height:.62;color:var(--azul-texto);margin-bottom:.12em}
   .destaque footer{display:flex;align-items:center;gap:12px;font:400 .8125rem/1.35 var(--sans);color:var(--ink-3)}
   .destaque footer img{width:44px;height:44px;border-radius:50%;object-fit:cover}
   .destaque footer strong{display:block;color:var(--ink);font-weight:700;font-size:.875rem}
@@ -142,7 +142,7 @@
 
   /* Entenda */
   .entenda{background:var(--paper-2);border-top:3px solid var(--escuro);padding:26px 20px 24px;margin:2.6rem 0}
-  .entenda .rotulo{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rubro);margin:0 0 8px}
+  .entenda .rotulo{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--azul-texto);margin:0 0 8px}
   .entenda h3{font-family:var(--serif);font-weight:600;font-size:1.45rem;line-height:1.2;margin:0 0 20px;letter-spacing:-.01em}
   .fluxo{border-top:1px solid var(--rule);padding:18px 0 16px}
   .fluxo h4{font:700 .8125rem/1.3 var(--sans);letter-spacing:.02em;margin:0 0 14px;color:var(--ink)}
@@ -152,24 +152,24 @@
   .no svg{flex:none;width:40px;height:40px;color:var(--escuro)}
   .no b{display:block;font:700 .9375rem/1.2 var(--sans);color:var(--ink)}
   .no small{display:block;font:400 .75rem/1.35 var(--sans);color:var(--ink-3)}
-  .no.chave{border-color:var(--escuro);box-shadow:inset 3px 0 0 var(--vermelho)}
+  .no.chave{border-color:var(--escuro);box-shadow:inset 3px 0 0 var(--azul)}
   .no.fraco{border-style:dashed}
   .elo{position:relative;min-height:46px;margin-left:31px;padding:8px 0 8px 22px;display:flex;align-items:center;font:500 .75rem/1.3 var(--sans);color:var(--ink-2)}
   .elo::before{content:"";position:absolute;left:-2px;top:0;bottom:0;border-left:4px solid #7F8780}
-  .elo.sinal::before{border-left:3px dashed var(--rubro);left:-1px}
+  .elo.sinal::before{border-left:3px dashed var(--azul-texto);left:-1px}
   .elo::after{content:"";position:absolute;left:-7px;bottom:-1px;border:7px solid transparent;border-top-color:#7F8780;border-bottom:0}
-  .elo.sinal::after{border-top-color:var(--rubro)}
+  .elo.sinal::after{border-top-color:var(--azul-texto)}
   .fluxo .nota{font:400 .8125rem/1.5 var(--sans);color:var(--ink-2);margin:12px 0 0}
   .fluxo .nota b{color:var(--escuro)}
   .entenda .rodape{font:400 .75rem/1.5 var(--sans);color:var(--ink-3);margin:6px 0 0;border-top:1px solid var(--rule);padding-top:12px}
 
   /* caixas laterais */
   .caixa{background:var(--paper-2);border-top:3px solid var(--escuro);padding:18px 18px 16px;margin:1.8rem 0}
-  .caixa h3{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rubro);margin:0 0 12px}
+  .caixa h3{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--azul-texto);margin:0 0 12px}
   .caixa ul{list-style:none;margin:0;padding:0}
   .caixa li{position:relative;font:400 .9rem/1.45 var(--sans);color:var(--ink);padding:7px 0 7px 22px;border-bottom:1px solid var(--rule)}
   .caixa li:last-child{border-bottom:0}
-  .caixa li::before{content:"";position:absolute;left:2px;top:.95em;width:9px;height:9px;background:var(--vermelho)}
+  .caixa li::before{content:"";position:absolute;left:2px;top:.95em;width:9px;height:9px;background:var(--azul)}
   .dado{border-top:3px solid var(--escuro);padding:14px 0 4px;margin:1.6rem 0}
   .dado b{display:block;font-family:var(--serif);font-weight:600;font-size:2.6rem;line-height:1;letter-spacing:-.02em;color:var(--escuro)}
   .dado span{display:block;font:400 .8125rem/1.45 var(--sans);color:var(--ink-2);margin-top:8px}
@@ -180,40 +180,35 @@
   /* perfil */
   .perfil{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:18px 0;margin:2rem 0}
   .perfil img{width:96px;height:120px;object-fit:cover;border-radius:2px}
-  .perfil .rot{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rubro);margin:2px 0 8px}
+  .perfil .rot{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--azul-texto);margin:2px 0 8px}
   .perfil h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;line-height:1.15;margin:0 0 6px}
   .perfil p{font:400 .875rem/1.5 var(--sans);color:var(--ink-2);margin:0}
 
   /* oferta */
   .oferta{max-width:calc(var(--wide) + 2 * var(--gutter));margin:3.4rem auto 0;padding:0 var(--gutter)}
   .oferta .cx{border-top:4px solid var(--escuro);background:var(--paper-2);padding:26px 20px 28px}
-  .oferta .rot{display:inline-flex;align-items:center;gap:9px;font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rubro);margin:0 0 12px}
-  .oferta .rot::before{content:"";width:9px;height:9px;background:var(--vermelho)}
+  .oferta .rot{display:inline-flex;align-items:center;gap:9px;font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--azul-texto);margin:0 0 12px}
+  .oferta .rot::before{content:"";width:9px;height:9px;background:var(--azul)}
   .oferta h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.35rem + 1.5vw,2.35rem);line-height:1.12;letter-spacing:-.015em;margin:0 0 14px;text-wrap:balance}
   .oferta .abre{font-family:var(--serif);font-size:clamp(1.1rem,1rem + .4vw,1.25rem);line-height:1.5;color:var(--ink-2);margin:0 0 26px;max-width:36em}
   .oferta h3.sub{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin:0 0 4px;padding-bottom:12px;border-bottom:2px solid var(--escuro)}
-  .pilha{list-style:none;margin:0 0 26px;padding:0}
-  .pilha li{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--rule)}
-  .pilha .n{width:30px;height:30px;border-radius:50%;background:var(--escuro);color:#fff;display:grid;place-items:center;font:700 .8125rem/1 var(--sans);margin-top:2px}
-  .pilha .n.ok{background:#fff;color:var(--rubro);border:1.5px solid var(--rubro)}
-  .pilha b{display:block;font:700 1rem/1.3 var(--sans);color:var(--ink);margin:0 0 4px}
-  .pilha p{font:400 .9375rem/1.55 var(--sans);color:var(--ink-2);margin:0}
-  .brindes{background:var(--paper);border:1px dashed #BDB7A8;border-radius:4px;padding:18px 16px 6px;margin:0 0 26px}
-  .brindes .rot2{font:700 .8125rem/1.35 var(--sans);color:var(--escuro);margin:0 0 6px}
-  .brindes ul{list-style:none;margin:0;padding:0}
-  .brindes li{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;padding:12px 0;border-top:1px solid var(--rule)}
-  .brindes li:first-child{border-top:0}
-  .brindes b{display:block;font:700 .9375rem/1.3 var(--sans);color:var(--ink);margin:0 0 3px}
-  .brindes p{font:400 .875rem/1.5 var(--sans);color:var(--ink-2);margin:0}
-  .etq{font:700 .8125rem/1 var(--sans);color:var(--ink-3);white-space:nowrap;padding-top:3px}
-  .etq s{text-decoration-thickness:1.5px}
-  .etq em{display:block;font-style:normal;font-weight:800;font-size:.625rem;letter-spacing:.12em;text-transform:uppercase;color:var(--rubro);margin-top:5px;text-align:right}
+  .sub-abre{font:400 .9375rem/1.5 var(--sans);color:var(--ink-2);margin:12px 0 4px}
+  .capaz{list-style:none;margin:0 0 30px;padding:0}
+  .capaz li{position:relative;padding:15px 0 15px 36px;border-bottom:1px solid var(--rule)}
+  .capaz li::before{content:"";position:absolute;left:0;top:17px;width:22px;height:22px;border-radius:50%;background:var(--azul) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+  .capaz b{display:block;font-family:var(--serif);font-weight:600;font-size:1.125rem;line-height:1.3;color:var(--ink);margin:0 0 5px;letter-spacing:-.005em}
+  .capaz p{font:400 .9375rem/1.55 var(--sans);color:var(--ink-2);margin:0}
+  .encontros{list-style:none;margin:0 0 26px;padding:0}
+  .encontros li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;padding:11px 0;border-bottom:1px solid var(--rule);font:400 .9375rem/1.5 var(--sans);color:var(--ink-2)}
+  .encontros li b{color:var(--ink);font-weight:700}
+  .encontros .n{width:28px;height:28px;border-radius:50%;background:var(--escuro);color:#fff;display:grid;place-items:center;font:700 .8125rem/1 var(--sans)}
+  .encontros .n.ok{background:#fff;color:var(--azul-texto);border:1.5px solid var(--azul-texto)}
   .preco{background:var(--escuro);color:#fff;border-radius:4px;padding:24px 20px 22px;text-align:center;margin:0 0 26px}
   .preco .de{font:600 .75rem/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#C3C7CD;margin:0 0 10px}
   .preco .valor{font-family:var(--serif);font-weight:600;font-size:clamp(2.6rem,2rem + 2.6vw,3.6rem);line-height:1;letter-spacing:-.02em;margin:0 0 10px;color:#fff}
   .preco .parc{font:500 .9375rem/1.45 var(--sans);color:#E7E9EC;margin:0 0 18px}
-  .preco .parc strong{color:var(--vermelho-claro);font-weight:700}
-  .cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:420px;font:700 1.0625rem/1 var(--sans);color:#fff;background:var(--vermelho);border-radius:4px;padding:18px 20px;text-decoration:none;transition:transform .1s,filter .2s}
+  .preco .parc strong{color:var(--azul-claro);font-weight:700}
+  .cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:420px;font:700 1.0625rem/1 var(--sans);color:#fff;background:var(--azul);border-radius:4px;padding:18px 20px;text-decoration:none;transition:transform .1s,filter .2s}
   .cta:hover{color:#fff;filter:brightness(1.08)}
   .cta:active{transform:translateY(1px)}
   .cta svg{width:18px;height:18px}
@@ -223,7 +218,7 @@
   .nao-serve p{font:400 .9375rem/1.55 var(--sans);color:var(--ink-2);margin:0}
   .quem{display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:start;border-top:1px solid var(--rule);padding-top:20px;margin-top:26px}
   .quem img{width:88px;height:110px;object-fit:cover;border-radius:2px}
-  .quem .rot3{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rubro);margin:2px 0 8px}
+  .quem .rot3{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--azul-texto);margin:2px 0 8px}
   .quem h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;line-height:1.15;margin:0 0 6px}
   .quem p{font:400 .875rem/1.55 var(--sans);color:var(--ink-2);margin:0 0 8px}
   .ps{font-family:var(--serif);font-size:1.0625rem;line-height:1.55;color:var(--ink);margin:22px 0 0;padding-top:18px;border-top:1px solid var(--rule)}
@@ -237,15 +232,15 @@
   .campo>label,.campo legend{display:block;font:700 .8125rem/1.3 var(--sans);color:var(--ink);margin:0 0 7px;padding:0}
   .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
   .campo input[type=text],.campo input[type=tel],.campo select{width:100%;font:400 1rem/1.3 var(--sans);color:var(--ink);background:#fff;border:1.5px solid #CFCAC0;border-radius:4px;padding:12px 12px;appearance:none;-webkit-appearance:none}
-  .campo select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2316181B' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
-  .campo input[type=text]:focus,.campo input[type=tel]:focus,.campo select:focus{border-color:var(--escuro);outline:none;box-shadow:0 0 0 3px rgba(200,52,31,.28)}
+  .campo select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23121417' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+  .campo input[type=text]:focus,.campo input[type=tel]:focus,.campo select:focus{border-color:var(--escuro);outline:none;box-shadow:0 0 0 3px rgba(31,95,173,.28)}
   .opcoes{display:flex;flex-wrap:wrap;gap:8px}
   .opcoes label{position:relative;cursor:pointer}
   .opcoes input{position:absolute;opacity:0;width:1px;height:1px}
   .opcoes span{display:inline-flex;align-items:center;justify-content:center;min-width:56px;font:600 .875rem/1 var(--sans);color:var(--escuro);background:#fff;border:1.5px solid #CFCAC0;border-radius:999px;padding:11px 15px;transition:background .15s,border-color .15s,color .15s}
   .opcoes label:hover span{border-color:var(--escuro)}
   .opcoes input:checked+span{background:var(--escuro);border-color:var(--escuro);color:#fff}
-  .opcoes input:focus-visible+span{outline:3px solid var(--vermelho);outline-offset:2px}
+  .opcoes input:focus-visible+span{outline:3px solid var(--azul);outline-offset:2px}
   .erro-msg{display:none;font:600 .75rem/1.3 var(--sans);color:var(--erro);margin-top:6px}
   .campo.invalido .erro-msg{display:block}
   .campo.invalido input[type=text],.campo.invalido input[type=tel],.campo.invalido select{border-color:var(--erro)}
@@ -259,11 +254,11 @@
 
   /* vídeos e fontes */
   .apoio{max-width:calc(var(--col) + 2 * var(--gutter));margin:3rem auto 0;padding:0 var(--gutter)}
-  .apoio h2{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rubro);margin:0 0 12px}
+  .apoio h2{font:800 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--azul-texto);margin:0 0 12px}
   .videos{list-style:none;margin:0 0 2.4rem;padding:0;border-top:2px solid var(--escuro)}
   .videos li{border-bottom:1px solid var(--rule)}
   .videos a{display:flex;align-items:center;gap:14px;padding:13px 0;text-decoration:none;color:var(--ink)}
-  .videos a:hover .tit{color:var(--rubro)}
+  .videos a:hover .tit{color:var(--azul-texto)}
   .videos .play{flex:none;width:34px;height:34px;border-radius:50%;background:var(--escuro);display:grid;place-items:center}
   .videos .play svg{width:12px;height:12px;margin-left:2px;color:#fff}
   .videos .tit{display:block;font:600 .9375rem/1.35 var(--serif);font-family:var(--serif)}
@@ -281,7 +276,7 @@
   .rodape-site .aviso{border-top:1px solid rgba(255,255,255,.14);padding-top:16px;font-size:.75rem;color:#9AA0A8}
 
   /* chamada fixa */
-  .fixo{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--escuro);color:#fff;text-decoration:none;font:700 .9375rem/1 var(--sans);padding:16px 18px;border-radius:6px;box-shadow:0 10px 30px rgba(22,24,27,.35);transform:translateY(calc(100% + 40px));transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+  .fixo{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--escuro);color:#fff;text-decoration:none;font:700 .9375rem/1 var(--sans);padding:16px 18px;border-radius:6px;box-shadow:0 10px 30px rgba(18,20,23,.35);transform:translateY(calc(100% + 40px));transition:transform .35s cubic-bezier(.2,.8,.2,1)}
   .fixo.on{transform:none}
   .fixo:hover{color:#fff;background:var(--escuro-2)}
   .fixo svg{width:18px;height:18px}
@@ -314,9 +309,9 @@
     .no{flex:1 1 0;min-width:0;flex-direction:column;align-items:flex-start;gap:8px;padding:12px 14px}
     .elo{flex:1 1 0;min-width:84px;min-height:0;margin:0;padding:0 8px 22px;justify-content:center;text-align:center}
     .elo::before{left:0;right:0;top:auto;bottom:12px;border-left:0;border-top:4px solid #7F8780}
-    .elo.sinal::before{left:0;border-left:0;border-top:3px dashed var(--rubro)}
+    .elo.sinal::before{left:0;border-left:0;border-top:3px dashed var(--azul-texto)}
     .elo::after{left:auto;right:-2px;bottom:7px;border:7px solid transparent;border-left-color:#7F8780;border-right:0}
-    .elo.sinal::after{border-left-color:var(--rubro);border-top-color:transparent}
+    .elo.sinal::after{border-left-color:var(--azul-texto);border-top-color:transparent}
     .elo.curto{flex:.55 1 0;min-width:64px}
     .oferta .cx{padding:38px 40px 36px}
     .oferta .grade{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:start}
@@ -358,7 +353,7 @@
 <article>
   <header class="abertura" id="topo">
     <div class="cabeca">
-      <div class="chapeu anima d1"><span class="ed">Gestão e IA</span><span class="selo">Conteúdo patrocinado · Artemis</span></div>
+      <div class="chapeu anima d1"><span class="ed">Gestão e IA</span></div>
       <h1 class="anima d2">Advogado do interior de Minas põe a IA para fazer o marketing e os sistemas do próprio escritório</h1>
       <p class="linha-fina anima d3">Dono de um escritório de direito bancário com dez a doze vendedores, Tallisson Souza montou no próprio computador uma operação de marketing com inteligência artificial. Em quatro semanas, vieram anúncios, cinco reels, um deck de vendas de 43 slides e uma plataforma de cálculo.</p>
       <div class="assina anima d4">
@@ -557,22 +552,29 @@
 
     <div class="grade">
       <div>
-        <h3 class="sub">O que você leva</h3>
-        <ol class="pilha">
-          <li><span class="n">1</span><div><b>Encontro 1 · O contexto do seu negócio</b><p>Quem compra de você, como essa pessoa fala, o que você vende e o que não pode dizer, escrito no arquivo que a IA lê antes de qualquer tarefa. O anúncio que você pedir depois disso volta com a cara da sua empresa.</p></div></li>
-          <li><span class="n">2</span><div><b>Encontro 2 · Seus dados ligados à IA</b><p>CRM, planilhas, e-mail e conta de anúncios conectados. O número da semana passa a sair do painel, e não da cabeça do vendedor.</p></div></li>
-          <li><span class="n">3</span><div><b>Encontro 3 · As peças saindo, com você no comando</b><p>Anúncio, roteiro de reel, página e apresentação comercial, feitos na sua frente e depois por você.</p></div></li>
-          <li><span class="n ok">+</span><div><b>A Sala de Operações instalada na sua máquina</b><p>As mais de cem skills, os agentes e o cérebro de copy que a Artemis usa na própria operação de marketing.</p></div></li>
-          <li><span class="n ok">+</span><div><b>Plataforma de conteúdo e suporte</b><p>Acesso à plataforma de conteúdo e à área de suporte depois dos encontros.</p></div></li>
-        </ol>
+        <h3 class="sub">O que você vai conseguir fazer</h3>
+        <p class="sub-abre">Depois do terceiro encontro, com a Sala instalada no seu computador:</p>
+        <ul class="capaz">
+          <li><b>O arquivo de uma página que faz a IA escrever do jeito que você fala.</b><p>Quem compra de você, que palavras essa pessoa usa, o que você vende e o que não pode dizer. A IA lê esse arquivo antes de qualquer pedido, e o texto já volta com a cara da sua empresa.</p></li>
+          <li><b>Três versões de anúncio, cada uma com um ângulo, prontas pra subir no mesmo dia.</b><p>Headline, texto e chamada no tamanho que cada plataforma aceita, revisados contra os vícios que entregam texto de IA antes de chegar em você.</p></li>
+          <li><b>O que o seu concorrente está anunciando agora, com a copy de cada anúncio e a página para onde ele manda o cliente.</b><p>O espião da Sala lê a Biblioteca de Anúncios da Meta, baixa e transcreve os vídeos e desenha o funil dele. Sem login e sem ferramenta paga.</p></li>
+          <li><b>A pergunta de segunda de manhã que responde quanto custou cada venda da semana, por canal.</b><p>Com o CRM, as planilhas e a conta de anúncios ligados à IA, o número sai do painel, e não da memória do vendedor.</p></li>
+          <li><b>Os três primeiros segundos do seu reel testados antes de você gravar.</b><p>A Sala escreve o roteiro, confere a abertura contra seis formatos de gancho e renderiza o vídeo em motion graphics, na vertical, sem editor.</p></li>
+          <li><b>Trinta dias de conteúdo para aprovar de uma vez: pauta, roteiro, legenda e carrossel com a arte pronta.</b><p>O carrossel sai em 1080×1350, no padrão visual da sua marca. Você lê, aprova ou pede ajuste.</p></li>
+          <li><b>A apresentação comercial que o seu vendedor abre na call, refeita sem designer.</b><p>Com os seus casos, os seus preços e a ordem da sua venda. No escritório do Tallisson, foram 43 slides.</p></li>
+          <li><b>Uma página de vendas no ar, com formulário, rastreamento e o lead caindo no seu CRM.</b><p>Texto, layout e evento de conversão configurados, do jeito que esta página foi feita.</p></li>
+          <li><b>A sequência de e-mails que traz de volta quem pediu orçamento e sumiu.</b><p>Escrita na sua voz, com o intervalo entre as mensagens definido e pronta para a sua ferramenta de e-mail.</p></li>
+          <li><b>O que a sua página precisa ter para o ChatGPT e o Google citarem a sua empresa na resposta.</b><p>A Sala traz as rotinas de SEO e de otimização para IA que a Artemis usa nos sites dos clientes.</p></li>
+          <li><b>A trava que impede a IA de escrever o que o seu setor proíbe.</b><p>As regras ficam escritas no contexto e são conferidas antes de cada entrega. No escritório do Tallisson, é o Código de Ética da OAB. Na sua empresa, pode ser a Anvisa, o conselho de medicina ou o Procon.</p></li>
+        </ul>
 
-        <div class="brindes">
-          <p class="rot2">De brinde, vão dois documentos que eu vendo separado:</p>
-          <ul>
-            <li><div><b>Arquiteto de Contexto, o livro</b><p>172 páginas sobre como escrever o contexto de uma empresa para a IA trabalhar direito. É a teoria por trás do primeiro encontro.</p></div><span class="etq"><s>R$ 27</s><em>incluso</em></span></li>
-            <li><div><b>O Google Docs cachorro</b><p>Três documentos curtos sobre o que vender com IA, por quanto e como fechar, com a skill que faz pesquisa de mercado e espiona os anúncios dos concorrentes numa conversa com o Claude.</p></div><span class="etq"><s>R$ 97</s><em>incluso</em></span></li>
-          </ul>
-        </div>
+        <h3 class="sub">Como funcionam os três encontros</h3>
+        <ol class="encontros">
+          <li><span class="n">1</span><div><b>Contexto.</b> A IA passa a conhecer o seu negócio: cliente, voz, oferta e regras.</div></li>
+          <li><span class="n">2</span><div><b>Conectores.</b> CRM, planilhas, e-mail e conta de anúncios ligados à IA.</div></li>
+          <li><span class="n">3</span><div><b>Operação.</b> As primeiras peças saem na sua frente, com você no comando.</div></li>
+          <li><span class="n ok">+</span><div><b>Fica com você:</b> a Sala de Operações com mais de cem skills e vinte agentes, a plataforma de conteúdo e a área de suporte.</div></li>
+        </ol>
 
         <div class="nao-serve">
           <h3>Quando não é para você</h3>
@@ -583,7 +585,7 @@
 
       <div class="lado">
         <div class="preco">
-          <p class="de">Os três encontros, a Sala e os dois documentos</p>
+          <p class="de">Os três encontros e a Sala no seu computador</p>
           <p class="valor">R$ 4.997</p>
           <p class="parc">ou <strong>8× de R$ 669</strong> · 6× de R$ 879 · 3× de R$ 1.699</p>
           <a class="cta" href="#inscricao">
